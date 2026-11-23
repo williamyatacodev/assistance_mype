@@ -1,0 +1,61 @@
+project_id = "assistance-mype"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "storage", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+
+[db]
+port = 54322
+shadow_port = 54320
+major_version = 16
+
+[studio]
+enabled = true
+port = 54323
+api_url = "http://localhost:54321"
+
+[inbucket]
+enabled = true
+port = 54324
+smtp_port = 54325
+pop_port = 54326
+
+[edge_functions]
+enabled = true
+port = 54327
+import_map = "./supabase/functions/import_map.json"
+
+[auth]
+enabled = true
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["http://localhost:3000/**"]
+jwt_expiry = 3600
+enable_refresh_token_rotation = true
+enable_signup = false
+enable_anonymous_sign_ins = false
+min_password_length = 8
+password_character_requirements = ""
+
+[auth.email]
+enable_signup = false
+enable_confirmations = false
+double_confirm_changes = true
+secure_email_change_enabled = true
+
+[auth.sms]
+enabled = false
+
+[auth.external]
+enabled = false
+
+[storage]
+enabled = true
+file_size_limit = "50MiB"
+
+[functions]
+verify_jwt = true
+
+[logs]
+level = "info"

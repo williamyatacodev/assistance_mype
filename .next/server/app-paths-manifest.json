@@ -1,0 +1,11 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/signout/route": "app/api/auth/signout/route.js",
+  "/auth/callback/route": "app/auth/callback/route.js",
+  "/api/attendance/punch/route": "app/api/attendance/punch/route.js",
+  "/first-login/page": "app/first-login/page.js",
+  "/page": "app/page.js",
+  "/login/page": "app/login/page.js",
+  "/admin/dashboard/page": "app/admin/dashboard/page.js",
+  "/worker/punch/page": "app/worker/punch/page.js"
+}
